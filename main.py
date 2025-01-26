@@ -2,8 +2,8 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-
-@app.get("/")
+# ("/") called here path like endpoint
+@app.get("/") 
 def hello():
     return {"data":{"name":"Ahmed","age":23}}
 
